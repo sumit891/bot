@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: telegram-ffmpeg-bot
+    env: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
